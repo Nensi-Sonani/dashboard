@@ -1,10 +1,14 @@
-import './App.css';
-import Sidebar from './Sidebar';
+import "./App.css";
+import Sidebar from "./Sidebar";
+import Home from "./Home";
 
 function App() {
   return (
     <div className="App">
-        <Sidebar/>
+      <div className="d-flex o-h ">
+        <Sidebar />
+        <Home className="justify-content-center"/>
+      </div>
     </div>
   );
 }

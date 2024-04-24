@@ -1,13 +1,13 @@
 import { faWpforms } from '@fortawesome/free-brands-svg-icons';
-import { faBox, faBoxesStacked, faFaceGrinWide, faImage, faTable } from '@fortawesome/free-solid-svg-icons';
+import { faBox, faBoxesStacked, faCalendarDays, faChartLine, faChessBoard, faFaceGrinWide, faImage, faLocationDot, faTable } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import React from 'react';
 
 const Sidebar = () => {
 
     return (
-        <div className='w-10 bg-black h-100 text-white p-3'>
-            <div>
+        <div className='w-10 bg-black text-white p-3 position-relative'>
+            <div className='position-fixed'>
                 <div className='d-flex justify-content-center'>
                     <p className='pe-3 f-20'>CT</p>
                     <p className='f-20'>CREATIVE TIM</p>
@@ -41,12 +41,20 @@ const Sidebar = () => {
                     <span className='ps-3'> Tables </span>
                 </div>
                 <div className='w-100 pxh-40  d-flex align-items-center p-4 mb-3'>
-                    <FontAwesomeIcon icon={faBox} className='f-20'/>
-                    <span className='ps-3'> Dashboard </span>
+                <FontAwesomeIcon icon={faLocationDot} className='f-20'/>
+                    <span className='ps-3'> Maps </span>
                 </div>
                 <div className='w-100 pxh-40  d-flex align-items-center p-4 mb-3'>
-                    <FontAwesomeIcon icon={faBox} className='f-20'/>
-                    <span className='ps-3'> Dashboard </span>
+                <FontAwesomeIcon icon={faChessBoard}  className='f-20'/>
+                    <span className='ps-3'> Widgets </span>
+                </div>
+                <div className='w-100 pxh-40  d-flex align-items-center p-4 mb-3'>
+                <FontAwesomeIcon icon={faChartLine}   className='f-20'/>
+                    <span className='ps-3'> Charts </span>
+                </div>
+                <div className='w-100 pxh-40  d-flex align-items-center p-4 mb-3'>
+                <FontAwesomeIcon icon={faCalendarDays}   className='f-20'/>
+                    <span className='ps-3'> Widgets </span>
                 </div>
             </div>
         </div>
